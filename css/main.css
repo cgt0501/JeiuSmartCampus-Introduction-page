@@ -1,0 +1,474 @@
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url("../fonts/NanumSquareNeoTTF-aLt.woff2");
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url("../fonts/NanumSquareNeoTTF-bRg.woff2");
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url("../fonts/NanumSquareNeoTTF-cBd.woff2");
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url("../fonts/NanumSquareNeoTTF-dEb.woff2");
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url("../fonts/NanumSquareNeoTTF-eHv.woff2");
+    font-weight: 900;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    font-family: "NanumSquareNeo", sans-serif;
+}
+
+.wrap {
+    background: #F2F2F7;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    transition: all 2s;
+    bottom: 0px;
+}
+
+.first {
+    position: relative;
+}
+
+.first > .name {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 100px;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.first > .name a {
+    font-weight: normal;
+}
+
+.first > .main {
+    font-size: 70pt;
+    color: #454545;
+    position: absolute;
+    top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+    animation: top-slide-1 1.5s ease-in-out;
+    text-align: center;
+    font-weight: 800;
+}
+
+.first a {
+    color: #0383FF;
+}
+
+.first div > .smile {
+    width: 130px;
+    position: absolute;
+    top: 430px;
+    right: 240px;
+    filter: drop-shadow(10px 10px 6px #ffd95e72);
+    animation: opacity 5s ease-in-out;
+    animation: grow-and-shrink 700ms ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.first div > .love {
+    width: 130px;
+    position: absolute;
+    top: 250px;
+    right: 360px;
+    filter: drop-shadow(10px 6px 6px #e0378964);
+    animation: opacity 1s ease-in-out;
+    animation: grow-and-shrink 1500ms ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.first div > .pang {
+    width: 150px;
+    position: absolute;
+    top: 430px;
+    left: 230px;
+    filter: drop-shadow(10px 10px 6px #ffd95e72);
+    animation: opacity 3s ease-in-out;
+    animation: grow-and-shrink 2000ms ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes grow-and-shrink {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.15);
+    }
+}
+
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.5); }
+
+.first > .swipe_down,
+.nine > .swipe_up {
+    position: absolute;
+    margin-top: 62%;
+    top: 5%; left: 50%;
+	transform: translate(-50%,-50%);
+    animation: bounce .5s ease infinite alternate;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 transparent,
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 9px 0 transparent,
+                 0 10px 10px rgba(0, 0, 0, .4);
+    animation-delay: .1s;
+}
+
+@keyframes bounce {
+    100% {
+      top: 15px;
+      text-shadow: 0 1px 0 #CCC,
+                   0 2px 0 #CCC,
+                   0 3px 0 #CCC,
+                   0 4px 0 #CCC,
+                   0 5px 0 #CCC,
+                   0 6px 0 #CCC,
+                   0 7px 0 #CCC,
+                   0 8px 0 #CCC,
+                   0 9px 0 #CCC,
+                   0 50px 25px rgba(0, 0, 0, .2);
+    }
+}
+
+.second {
+    position: relative;
+}
+
+.second > .intro {
+    position: absolute;
+    font-size: 28pt;
+    color: #454545;
+    top: 3%;
+    left: 3%;
+    font-weight: 800;
+}
+
+.second img {
+    position: absolute;
+    top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+    width: 700px;
+}
+
+.second p {
+    position: absolute;
+    font-size: 20pt;
+    top: 90%;
+    left: 50%;
+	transform: translate(-50%,-50%);
+    color: #454545;
+}
+
+.second p a {
+    font-weight: 800;
+}
+
+.second p a:not(:first-of-type) {
+    margin-left: 50px;
+}
+
+.third {
+    position: relative;
+    color: #454545;
+}
+
+.third > .intro {
+    position: absolute;
+    font-size: 28pt;
+    color: #454545;
+    top: 3%;
+    left: 3%;
+    font-weight: 800;
+}
+
+.third > .smile2 {
+    position: absolute;
+    width: 150px;
+    top: 50px;
+    left: 300px;
+    filter: drop-shadow(10px 10px 6px #ffd95e72);
+    animation: grow-and-shrink 2000ms ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.third > .smile3 {
+    position: absolute;
+    width: 150px;
+    top: 550px;
+    left: 450px;
+    filter: drop-shadow(10px 10px 6px #ffd95e72);
+    animation: grow-and-shrink 1500ms ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.third > .love2 {
+    position: absolute;
+    width: 150px;
+    top: 350px;
+    left: 690px;
+    filter: drop-shadow(10px 6px 6px #e0378964);
+    animation: grow-and-shrink 700ms ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.third > .pang2 {
+    position: absolute;
+    width: 200px;
+    top: 350px;
+    left: 100px;
+    filter: drop-shadow(10px 10px 6px #ffd95e72);
+    animation: grow-and-shrink 2500ms ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.third h2 {
+    position: absolute;
+    font-size: 28pt;
+    font-weight: 800;
+}
+#vue {
+    top: 110px;
+    left: 450px;
+}
+#axios {
+    top: 610px;
+    left: 610px;
+}
+#mvvm {
+    top: 410px;
+    left: 860px;
+}
+#rest_api {
+    top: 430px;
+    left: 330px;
+    font-size: 34pt;
+}
+
+#progressiveWebApps {
+    top: 230px;
+    left: 150px;
+    font-size: 18pt;
+    font-weight: normal;
+}
+
+#vuex {
+    top: 300px;
+    left: 550px;
+    font-size: 22pt;
+}
+
+#mySQL {
+    top: 130px;
+    right: 320px;
+    font-size: 24pt;
+    font-weight: normal;
+}
+
+#vueRouter {
+    bottom: 200px;
+    left: 170px;
+    font-size: 22pt;
+}
+
+#tensor {
+    top: 270px;
+    right: 100px;
+    font-size: 16pt;
+    font-weight: normal;
+}
+
+#flask {
+    top: 250px;
+    right: 400px;
+    font-size: 16pt;
+    font-weight: normal;
+}
+
+#express {
+    bottom: 200px;
+    right: 170px;
+    font-size: 22pt;
+}
+
+.fourth {
+    position: relative;
+}
+
+.fourth > .intro {
+    position: absolute;
+    font-size: 28pt;
+    color: #454545;
+    top: 3%;
+    left: 3%;
+    font-weight: 800;
+}
+
+.fourth img {
+    position: absolute;
+    width: 900px;    
+    top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.fifth {
+    position: relative;
+}
+
+.fifth img:first-of-type {
+    position: absolute;
+    width: 300px;
+    top: 50%; left: 25%;
+	transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+.fifth img:nth-of-type(2) {
+    position: absolute;
+    width: 500px;
+    top: 23%;
+    left: 45%;
+}
+
+.fifth img:nth-of-type(3) {
+    position: absolute;
+    width: 260px;
+    top: 50%; left: 25%;
+	transform: translate(-50%,-50%);
+}
+
+.fifth p {
+    position: absolute;
+    top: 57%;
+    left: 45%;
+    font-size: 18pt;
+    line-height: 30px;
+}
+
+.sixth {
+    position: relative;
+}
+
+.sixth img:first-of-type {
+    position: absolute;
+    width: 300px;
+    top: 50%; left: 75%;
+	transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+.sixth img:nth-of-type(2) {
+    position: absolute;
+    width: 500px;
+    top: 23%;
+    left: 12%;
+}
+
+.sixth img:nth-of-type(3) {
+    position: absolute;
+    width: 260px;
+    top: 50%; left: 75%;
+	transform: translate(-50%,-50%);
+}
+
+.sixth p {
+    position: absolute;
+    top: 57%;
+    left: 12%;
+    font-size: 18pt;
+    line-height: 30px;
+}
+
+.nine > .nineWrap {
+    position: relative;
+}
+
+.nine div .front {
+    margin-left: 20.5%;
+}
+
+.nine div img {
+    width: 25%;
+    margin-top: 29%;
+    margin-right: 100px;
+}
+
+.nine > .intro {
+    position: absolute;
+    font-size: 28pt;
+    color: #454545;
+    margin-top: 3%;
+    margin-left: 3%;
+    font-weight: 800;
+}
+
+@keyframes top-slide-1 {
+    from {
+        top: 0px;
+        opacity: 0;
+    } to {
+        top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 1;
+    }
+}
+
+@keyframes top-back-1 {
+    from {
+        top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 1;
+    } to {
+        top: 0px;
+        opacity: 0;
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes opacity-back {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
